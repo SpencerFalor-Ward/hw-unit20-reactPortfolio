@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <!--Header containg site tab title, character set, link to CSS sheet-->
+  <head>
+    <meta charset="UTF-8" />
+    <title>SFW Digital Buisiness Card</title>
+    <link rel="stylesheet" type="text/css" href="./assets/css/reset.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+  </head>
+
+  <body>
+    <div class="container-sm container-md container-lg container-xl">
+      <header class="head sticky-top d-flex">
+        <!--Navigation header-->
+
+        <!-- pirmary styling for navbar component -->
+        <nav
+          class="navbar navbar-expand-lg navbar-light"
+          style="background-color: rgb(233,233,233)"
+        >
+          <!-- easteregg button -->
+          <a class="navbar-brand" rel="thisIsMyPage" href="thisIsMyPage.html"
+            ><img
+              src="./assets/images/supButton.png"
+              width="30"
+              height="30"
+              class="d-inline-block align-top"
+              alt=""
+            />
+          </a>
+
+          <!-- name in box -->
+          <div class="header">
+            <h1 id="name">
+              Spencer Falor-Ward
+            </h1>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon border"></span>
+            </button>
+          </div>
+
+          <!-- nav link buttons -->
+          <!-- <div class="collapse navbar-collapse text-sm-right text-md-right text-lg-right text-xl-right " id="navbarNav"> -->
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav justify-content-end">
+              <li class="nav-item active">
+                <a class="nav-link" id="aboutlink" href="index.html"
+                  >About <span class="sr-only">(current)</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="contactlink" href="contact.html"
+                  >Contact</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="portfoliolink" href="portfolio.html"
+                  >Portfolio</a
+                >
+              </li>
+              <li class="nav-item"></li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+
+      <!-- Contact form code -->
+      <section id="main-info" class="clearfix">
+        <!--Fill in form will be sent to .php file with submitted info-->
+        <h1 class="logo">
+          <p>Contact</p>
+        </h1>
+
+        <form class="form-group form" action="/action_page.php">
+          <div class="clearfix">
+            <!--First name fill in-->
+            <label for="fname">First Name </label>
+            <input
+              type="text"
+              id="fname"
+              name="firstname"
+              placeholder="Your name..."
+            />
+            <br />
+
+            <!--Last name fill in-->
+            <label for="lname">Last Name </label>
+            <input type="text" id="lname" placeholder="Your last name..." />
+            <br />
+
+            <!--Email fill in-->
+            <label for="email">Email </label>
+            <input type="text" id="email" placeholder="Email" />
+            <br />
+
+            <!--Message fill in-->
+            <label for="message">Message </label>
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Say summ'n....or not, school"
+              style="height:200px"
+            >
+            </textarea>
+            <br />
+            <input type="submit" id="sendButton" value="Send into the aether" />
+            <br />
+          </div>
+        </form>
+      </section>
+
+      <footer class="footer" style="text-align:center;">
+        <a class="nav-link" class="footer" href="https://github.com/SpencerFalor-Ward"
+            >github</a
+            >
+            <a class="nav-link" class="footer" href="https://www.linkedin.com/in/spencer-falor-ward-59a16494"
+            >linkedin</a
+            >
+            Copyright&copy;
+      </footer>
+    </div>
+  </body>
+  <script
+    src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"
+  ></script>
+</html>
