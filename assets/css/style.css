@@ -53,6 +53,7 @@ body {
   padding: 0%;
   align-items: unset;
   justify-content: unset;
+  background-color: rgb(233,233,233)
 }
 
 /* Nav links to pages on site */
@@ -140,6 +141,7 @@ body {
   background-color: #666666;
   color: #ffffff;
   bottom: 0%;
+  text-align:center;
 }
 
 .nav-link
