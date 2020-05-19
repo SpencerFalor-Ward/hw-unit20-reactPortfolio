@@ -2,16 +2,16 @@ import React from "react"
 
 function Contact () {
 return (
-    <section id="main-info" class="clearfix">
+    <section id="main-info" className="clearfix">
 
-      <h1 class="logo">
+      <h1 className="logo">
         <p>Contact</p>
       </h1>
 
-      <form class="form-group form" action="/action_page.php">
-        <div class="clearfix">
+      <form className="form-group form" action="/action_page.php">
+        <div className="clearfix">
    
-          <label for="fname">First Name </label>
+          <label form="fname">First Name </label>
           <input
             type="text"
             id="fname"
@@ -20,16 +20,16 @@ return (
           />
           <br />
 
-          <label for="lname">Last Name </label>
+          <label form="lname">Last Name </label>
           <input type="text" id="lname" placeholder="Your last name..." />
           <br />
 
-          <label for="email">Email </label>
+          <label form="email">Email </label>
           <input type="text" id="email" placeholder="Email" />
           <br />
 
   
-          <label for="message">Message </label>
+          <label form="message">Message </label>
           <textarea
             id="message"
             name="message"

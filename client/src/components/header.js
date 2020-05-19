@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./style.css";
 
 function Nav() {
   return (
@@ -8,8 +7,8 @@ function Nav() {
 
             <nav className="navbar navbar-expand-lg navbar-light">
 
-                <a className="navbar-brand" rel="thisIsMyPage" href="./assets/images/sitePlaceHolder2.PNG">
-                  <img src="./assets/images/supButton.png" width="30" height="30" class="d-inline-block align-top" alt=""/>
+                <a className="navbar-brand" rel="thisIsMyPage" href="./assets/images/sitePlaceHolder2.PNG" >
+                  <img src="./assets/images/supButton.png" width="30" height="30" className="d-inline-block align-top" alt=""/>
                 </a>
 
                 <div className="header">

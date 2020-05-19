@@ -27,20 +27,20 @@ var arr = [{
   src:"./assets/images/HW-3-passwordGenerator-resize.png",
   rel:"placeholder",
   alt:"Password Generator",
-  title:"I built this"
+  title:"Strategic development"
 },{
   url:"https://spencerfalor-ward.github.io/HW-5-SFW-Daily-Planner/",
   id:"project5",
   src:"./assets/images/HW-5-dailyPlaner-resize.png",
   rel:"placeholder",
   alt:"Daily planner",
-  title:"Strategic development"
+  title:"I built this"
 },{
-  url:"goodReadMe.html",
+  url:"https://fitness-tracker-sfw.herokuapp.com/",
   id:"project6",
-  src:"./assets/images/goodReadMe-resize.jpg",
+  src:"./assets/images/fitnessTracker-resize.png",
   rel:"placeholder",
-  alt:"goodReadMe",
+  alt:"Workout tracker",
   title:"I built this too"
 },{
   url:"https://eat-ah-burger.herokuapp.com/",
@@ -50,12 +50,12 @@ var arr = [{
   alt:"Eat-ah-burger",
   title:"Yup, I also built this"
 },{
-  url:"pictoMoji.html",
+  url:"https://budget-tracker-sfw.herokuapp.com/",
   id:"project8",
-  src:"./assets/images/pictoMoji-resize.jpg",
+  src:"./assets/images/budgetTracker-resize.png",
   rel:"placeholder",
-  alt:"Pictomoji",
-  title:"Group project 2!"
+  alt:"Online/Offline budget tracker",
+  title:"These numbers don't lie"
 },{
   url:"./assets/Spencer Falor-Ward CV 2020.pdf",
   id:"project9",
