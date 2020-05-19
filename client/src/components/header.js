@@ -10,7 +10,6 @@ function Nav() {
                 <a className="navbar-brand" rel="thisIsMyPage" href="./assets/images/sitePlaceHolder2.PNG" >
                   <img src="./assets/images/supButton.png" width="30" height="30" className="d-inline-block align-top" alt=""/>
                 </a>
-
                 <div className="header">
                 <h1 id="name">
                     Spencer Falor-Ward</h1>
@@ -33,6 +32,7 @@ function Nav() {
                   </li>
                 </ul>
               </div>
+              
             </nav>
     </header>
   );

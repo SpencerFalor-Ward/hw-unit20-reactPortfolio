@@ -4,11 +4,11 @@ function About (){
     return (
         <section id="main-info" class="clearfix">
 
-        <h1 class="logo">
+        <h1 className="logo">
             <p>About me</p>
             </h1>
             <img id="profilePic" rel="profilepic" src="./assets/images/Robin_wedding_hangingphoto.JPG" alt="Thats me"/>
-            <div class="aboutMe">
+            <div className="aboutMe">
                 <p>
                     Sup! Thank you for checking me out.
                 </p>

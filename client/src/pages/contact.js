@@ -1,6 +1,28 @@
-import React from "react"
+import React, {useState} from "react"
+import { Input, TextArea, FormBtn } from "../components/form";
+import API from "../utils/API";
 
 function Contact () {
+
+  const [formObject, setFormObject] = useState({})
+
+  function handleInputChange(event) {
+    const { name, value } = event.target;
+    setFormObject({...formObject, [name]: value})
+  };
+
+  function handleFormSubmit(event) {
+    event.preventDefault();
+    if (formObject.title && formObject.author) {
+      API.saveBook({
+        name: formObject.name,
+        id: formObject.id
+      })
+        // .then(res => loadBooks())
+        .catch(err => console.log(err));
+    }
+  };
+
 return (
     <section id="main-info" className="clearfix">
 
@@ -10,35 +32,47 @@ return (
 
       <form className="form-group form" action="/action_page.php">
         <div className="clearfix">
-   
           <label form="fname">First Name </label>
-          <input
-            type="text"
-            id="fname"
-            name="firstname"
-            placeholder="Your name..."
-          />
-          <br />
-
-          <label form="lname">Last Name </label>
-          <input type="text" id="lname" placeholder="Your last name..." />
-          <br />
-
-          <label form="email">Email </label>
-          <input type="text" id="email" placeholder="Email" />
-          <br />
-
-  
-          <label form="message">Message </label>
-          <textarea
-            id="message"
-            name="message"
-            placeholder="Say summ'n....or not, school"
-          >
-          </textarea>
-          <br />
-          <input type="submit" id="sendButton" value="Send into the aether" />
-          <br />
+        <Input
+                onChange={handleInputChange}
+                // type="text"
+                id="fname"
+                name="firstname"
+                placeholder="Your name..."
+              />
+                <label form="lname">Last Name </label>
+              <Input
+                onChange={handleInputChange}
+                // type="text" 
+                id="lname" 
+                name="lname"
+                placeholder="Your last name..."
+              />
+                <label form="email">Email </label>
+              <Input
+                onChange={handleInputChange}
+                // type="text" 
+                id="email" 
+                name="email" 
+                placeholder="Email" 
+              />
+                <label form="message">Message </label>
+              <TextArea
+                onChange={handleInputChange}
+                id="message"
+                name="message"
+                placeholder="Say summ'n....or not, school"
+              />
+              <FormBtn
+                disabled={!(formObject.author && formObject.title)}
+                onClick={handleFormSubmit}
+                type="submit" 
+                id="sendButton"
+              >
+                Send into the aether
+              </FormBtn>
+          {/* <input  value="Send into the aether" />
+          <br /> */}
         </div>
       </form>
     </section>
