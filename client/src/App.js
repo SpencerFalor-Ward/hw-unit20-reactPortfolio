@@ -15,7 +15,7 @@ function App() {
       <Header/>
         <Switch>
           <Route exact path={["/home"]}>
-            <About />
+            <Home />
           </Route>
           <Route exact path={["/about"]}>
             <About />

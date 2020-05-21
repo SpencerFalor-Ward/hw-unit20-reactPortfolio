@@ -1,6 +1,6 @@
 import React from "react"
 
-function About (){
+function Home (){
     return (
         <section id="main-info" class="clearfix">
 
