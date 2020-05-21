@@ -5,6 +5,7 @@ import Footer from "../src/components/footer"
 import Portfolio from "../src/pages/portfolio"
 import About from "../src/pages/about"
 import Contact from "../src/pages/contact"
+import Home from "../src/pages/home"
 
 
 function App() {
@@ -13,7 +14,10 @@ function App() {
       <Router>
       <Header/>
         <Switch>
-          <Route exact path={["/", "/about"]}>
+          <Route exact path={["/home"]}>
+            <About />
+          </Route>
+          <Route exact path={["/about"]}>
             <About />
           </Route>
           <Route  path="/contact">

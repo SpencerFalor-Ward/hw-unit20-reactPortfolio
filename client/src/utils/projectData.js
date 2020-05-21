@@ -3,7 +3,7 @@ var arr = [{
 
   url:"https://spencerfalor-ward.github.io/HW-6-Wheather-Dashboard/",
   id:"project1",
-  src:"./assets/images/HW-6-weatherGeneratorresize.png",
+  src:"./assets/HW-6-weatherGeneratorresize.png",
   rel:"placeholder",
   alt:"Weather Dashboard",
   title:"Commission work"
