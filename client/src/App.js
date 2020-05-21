@@ -6,6 +6,7 @@ import Portfolio from "../src/pages/portfolio"
 import About from "../src/pages/about"
 import Contact from "../src/pages/contact"
 
+
 function App() {
   return (
     <div className="App container-fluid container-sm">
