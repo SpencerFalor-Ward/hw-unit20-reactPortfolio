@@ -50,4 +50,4 @@ function Home (){
     )
 }
 
-export default About;
+export default Home;
