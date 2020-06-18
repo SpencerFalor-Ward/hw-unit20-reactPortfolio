@@ -37,7 +37,7 @@ return (
                 onChange={handleInputChange}
                 // type="text"
                 id="fname"
-                name="firstname"
+                name="firstName"
                 placeholder="Your name..."
               />
                 <label form="lname">Last Name </label>
@@ -45,7 +45,7 @@ return (
                 onChange={handleInputChange}
                 // type="text" 
                 id="lname" 
-                name="lname"
+                name="lastName"
                 placeholder="Your last name..."
               />
                 <label form="email">Email </label>
