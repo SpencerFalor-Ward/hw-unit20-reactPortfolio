@@ -1,0 +1,27 @@
+{
+  "name": "hw-unit20-reactPortfolio",
+  "version": "1.0.0",
+  "description": "portfolio v4 created with REACT",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongodb": "^3.5.9",
+    "mongoose": "^5.9.19"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SpencerFalor-Ward/hw-unit20-reactPortfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SpencerFalor-Ward/hw-unit20-reactPortfolio/issues"
+  },
+  "homepage": "https://github.com/SpencerFalor-Ward/hw-unit20-reactPortfolio#readme"
+}
