@@ -1,5 +1,6 @@
 import React from "react"
 
+
 function About (){
     return (
         <section id="main-info" class="clearfix">
@@ -7,7 +8,7 @@ function About (){
         <h1 className="logo">
             <p>About me</p>
             </h1>
-            <img id="profilePic" rel="profilepic" src="./assets/images/Robin_wedding_hangingphoto.JPG" alt="Thats me"/>
+            <img id="profilePic" rel="profilepic" src="../../public/assets/images/Robin_wedding_hangingphoto.JPG" alt="Thats me"/>
             <div className="aboutMe">
                 <p>
                     Sup! Thank you for checking me out.
