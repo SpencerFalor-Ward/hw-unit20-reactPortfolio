@@ -14,7 +14,15 @@ return (
         <div className="projectGrid">
             {arr.map(project => {
                 return(
-            <Project {...project} />)}
+            <Project 
+            key={project.id} 
+            url={project.id} 
+            id={project.id} 
+            src={project.id} 
+            rel={project.id} 
+            alt={project.id} 
+            title={project.id} 
+            />)}
         )}
         </div>
       </section>
