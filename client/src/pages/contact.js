@@ -14,7 +14,7 @@ function Contact () {
   function handleFormSubmit(event) {
     event.preventDefault();
     if (formObject.title && formObject.author) {
-      API.saveBook({
+      API.saveMessage({
         name: formObject.name,
         id: formObject.id
       })
