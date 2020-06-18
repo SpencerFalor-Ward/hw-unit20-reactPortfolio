@@ -16,12 +16,12 @@ return (
                 return(
             <Project 
             key={project.id} 
-            url={project.id} 
+            url={project.url} 
             id={project.id} 
-            src={project.id} 
-            rel={project.id} 
-            alt={project.id} 
-            title={project.id} 
+            src={project.src} 
+            rel={project.rel} 
+            alt={project.alt} 
+            title={project.title} 
             />)}
         )}
         </div>
