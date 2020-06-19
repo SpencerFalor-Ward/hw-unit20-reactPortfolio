@@ -1,5 +1,6 @@
 import React, {useState} from "react"
 import { Input, TextArea, FormBtn } from "../components/form";
+import "../assets/css/style.css"
 import API from "../utils/API";
 
 function Contact () {

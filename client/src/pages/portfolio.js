@@ -1,5 +1,6 @@
 import React from "react"
 import Project from "../components/project"
+import "../assets/css/style.css"
 import arr from "../utils/projectData"
 
 

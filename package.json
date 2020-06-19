@@ -6,7 +6,8 @@
   "dependencies": {
     "express": "^4.17.1",
     "mongodb": "^3.5.9",
-    "mongoose": "^5.9.19"
+    "mongoose": "^5.9.19",
+    "path": "^0.12.7"
   },
   "devDependencies": {},
   "scripts": {
@@ -18,7 +19,7 @@
     "url": "git+https://github.com/SpencerFalor-Ward/hw-unit20-reactPortfolio.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "SpencerFalor-Ward",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/SpencerFalor-Ward/hw-unit20-reactPortfolio/issues"
