@@ -3,13 +3,14 @@ const app = express();
 const path = require("path");
 const mongoose = require("mongoose");
 const routes = require("./routes");
+const bodyParser = require("body-parser");
 
 const PORT = process.env.PORT || 3001;
 
 
 // Connect to the Mongo DB
 mongoose.connect(
-    process.env.MONGODB_URI || "mongodb://<dbuser>:<dbpassword>@ds139801.mlab.com:39801/heroku_msl34wsv",
+    process.env.MONGODB_URI || "mongodb://localhost/sfwReactPortfolio",
     {
     useCreateIndex: true,
     useNewUrlParser: true
@@ -26,6 +27,10 @@ app.use(express.json());
 if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));
 }
+
+// Define middlewares here for parsing req.body:
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
 
 // Currently serving static assets
 app.use(express.static(path.join(__dirname, "public")));

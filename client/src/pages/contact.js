@@ -5,23 +5,28 @@ import API from "../utils/API";
 
 function Contact () {
 
-  const [formObject, setFormObject] = useState({})
+  const [fname, setFname] = useState();
+  const [lname, setLname] = useState();
+  const [email, setEmail] = useState();
+  const [message, setMessage] = useState();
 
-  function handleInputChange(event) {
-    const { name, value } = event.target;
-    setFormObject({...formObject, [name]: value})
-  };
+  // function handleInputChange(event) {
+  //   const { name, value } = event.target;
+  //   setFormObject({...formObject, [name]: value})
+  // };
 
   function handleFormSubmit(event) {
     event.preventDefault();
-    if (formObject.title && formObject.author) {
       API.saveMessage({
-        name: formObject.name,
-        id: formObject.id
+        firstName: fname,
+        lastName: lname,
+        email: email,
+        message: message,
       })
-        // .then(res => loadBooks())
+      .then((response) => {
+        console.log(response)})
         .catch(err => console.log(err));
-    }
+  
   };
 
 return (
@@ -35,7 +40,7 @@ return (
         <div className="clearfix">
           <label form="fname">First Name </label>
         <Input
-                onChange={handleInputChange}
+                onChange={e => setFname(e.target.value)}
                 // type="text"
                 id="fname"
                 name="firstName"
@@ -43,7 +48,7 @@ return (
               />
                 <label form="lname">Last Name </label>
               <Input
-                onChange={handleInputChange}
+                onChange={e => setLname(e.target.value)}
                 // type="text" 
                 id="lname" 
                 name="lastName"
@@ -51,7 +56,7 @@ return (
               />
                 <label form="email">Email </label>
               <Input
-                onChange={handleInputChange}
+                onChange={e => setEmail(e.target.value)}
                 // type="text" 
                 id="email" 
                 name="email" 
@@ -59,13 +64,12 @@ return (
               />
                 <label form="message">Message </label>
               <TextArea
-                onChange={handleInputChange}
+                onChange={e => setMessage(e.target.value)}
                 id="message"
                 name="message"
                 placeholder="Say summ'n....or not, school"
               />
               <FormBtn
-                disabled={!(formObject.author && formObject.title)}
                 onClick={handleFormSubmit}
                 type="submit" 
                 id="sendButton"
