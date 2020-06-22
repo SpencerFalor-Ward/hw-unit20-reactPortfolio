@@ -3,6 +3,8 @@ import { Input, TextArea, FormBtn } from "../components/form";
 import "../assets/css/style.css"
 import API from "../utils/API";
 
+const moment = require("moment")
+
 function Contact () {
 
   const [fname, setFname] = useState();
@@ -22,6 +24,7 @@ function Contact () {
         lastName: lname,
         email: email,
         message: message,
+        time: moment().format('LLLL')
       })
       .then((response) => {
         console.log(response)})
@@ -45,6 +48,7 @@ return (
                 id="fname"
                 name="firstName"
                 placeholder="Your name..."
+                
               />
                 <label form="lname">Last Name </label>
               <Input
@@ -70,9 +74,10 @@ return (
                 placeholder="Say summ'n....or not, school"
               />
               <FormBtn
-                onClick={handleFormSubmit}
+                onSubmit={handleFormSubmit}
                 type="submit" 
                 id="sendButton"
+                method= 'POST'
               >
                 Send into the aether
               </FormBtn>

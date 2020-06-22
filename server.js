@@ -19,6 +19,11 @@ mongoose.connect(
 
 const mongoose_db = mongoose.connection;
 
+// contact form code may not need
+// app.get("/", (req, res) =>{
+//   res.sendfile(path.join(_dirname, "public"));
+// })
+
 // Configure body parsing for AJAX requests
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
@@ -35,6 +40,13 @@ app.use(bodyParser.json());
 // Currently serving static assets
 app.use(express.static(path.join(__dirname, "public")));
 // app.use("/Images", express.static("Images")) //fix path for images
+
+app.post("/api/contactForm", (req, res)=>{
+console.log("Data", req.body)
+//send email here
+res.json({message:"message recieved"})
+}
+);
 
 // Add routes, both API and view
 app.use(routes);
