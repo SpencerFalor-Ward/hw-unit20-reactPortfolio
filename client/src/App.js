@@ -5,7 +5,7 @@ import Footer from "../src/components/footer"
 import Portfolio from "../src/pages/portfolio"
 import About from "../src/pages/about"
 import Contact from "../src/pages/contact"
-// import Home from "../src/pages/home"
+
 
 
 function App() {
@@ -14,9 +14,6 @@ function App() {
       <Router>
       <Header/>
         <Switch>
-          {/* <Route exact path={["/home", "/"]}>
-            <Home />
-          </Route> */}
           <Route exact path={["/about","/", "/hw-unit20-reactPortfolio"]}>
             <About />
           </Route>

@@ -1,5 +1,5 @@
 import React from "react"
-import "../../src/assets/css/style.css"
+import "../assets/css/styles.css"
 import robinWeddingImg from "../assets/images/Robin_wedding_hangingphoto.JPG"
 
 

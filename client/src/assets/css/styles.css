@@ -1,7 +1,7 @@
-/* "*" is selecting all elemnets for box-sizing */
 * {
   box-sizing: border-box;
 }
+/* "*" is selecting all elemnets for box-sizing */
 
 body {
   background-color: #777;
@@ -169,14 +169,12 @@ textarea {
 
 #sendButton {
   width: auto;
-  border-color: #655f55;
-  color: #fffbdf;
-  background-color: #1d1c19;
+  border-color: rgb(233,233,233);
+  color: rgb(233, 233, 233);
+  background-color:  #7a9b99;
   border-width: 2px;
     border-style: outset;
     border-image: initial;
-    
-
 }
 
 /* Styling for the photo grid on portfolio page */

@@ -1,16 +1,17 @@
 import React, {useState} from "react"
 import { Input, TextArea, FormBtn } from "../components/form";
-import "../assets/css/style.css"
+import "../assets/css/styles.css"
 import API from "../utils/API";
 
 const moment = require("moment")
 
 function Contact () {
 
-  const [fname, setFname] = useState();
-  const [lname, setLname] = useState();
-  const [email, setEmail] = useState();
-  const [message, setMessage] = useState();
+  const [fname, setFname] = useState("");
+  const [lname, setLname] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+  // const [sent, setSent] = useState();
 
   // function handleInputChange(event) {
   //   const { name, value } = event.target;
@@ -29,7 +30,6 @@ function Contact () {
       .then((response) => {
         console.log(response)})
         .catch(err => console.log(err));
-  
   };
 
 return (
@@ -39,7 +39,8 @@ return (
         <p>Contact</p>
       </h1>
 
-      <form className="form-group form" action="/action_page.php">
+      {/* <form className="form-group form" action="/action_page.php"> */}
+      <form className="form-group form" onSubmit={handleFormSubmit}>
         <div className="clearfix">
           <label form="fname">First Name </label>
         <Input
@@ -48,6 +49,7 @@ return (
                 id="fname"
                 name="firstName"
                 placeholder="Your name..."
+                value ={fname}
                 
               />
                 <label form="lname">Last Name </label>
@@ -57,6 +59,7 @@ return (
                 id="lname" 
                 name="lastName"
                 placeholder="Your last name..."
+                value ={lname}
               />
                 <label form="email">Email </label>
               <Input
@@ -64,7 +67,8 @@ return (
                 // type="text" 
                 id="email" 
                 name="email" 
-                placeholder="Email" 
+                placeholder="Email"
+                value ={email} 
               />
                 <label form="message">Message </label>
               <TextArea
@@ -72,9 +76,10 @@ return (
                 id="message"
                 name="message"
                 placeholder="Say summ'n....or not, school"
+                value ={message}
               />
               <FormBtn
-                onSubmit={handleFormSubmit}
+                
                 type="submit" 
                 id="sendButton"
                 method= 'POST'

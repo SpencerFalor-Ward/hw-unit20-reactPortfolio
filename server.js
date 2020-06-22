@@ -4,6 +4,7 @@ const path = require("path");
 const mongoose = require("mongoose");
 const routes = require("./routes");
 const bodyParser = require("body-parser");
+const sendMail = require("./client/src/components/mail")
 
 const PORT = process.env.PORT || 3001;
 
@@ -42,11 +43,16 @@ app.use(express.static(path.join(__dirname, "public")));
 // app.use("/Images", express.static("Images")) //fix path for images
 
 app.post("/api/contactForm", (req, res)=>{
+  const {subject, email, text} = req.body;
 console.log("Data", req.body)
-//send email here
-res.json({message:"message recieved"})
-}
-);
+sendMail(email, subject, text, function (err, data){
+  if (err){
+    res.status(500).json({message:"Internal error"})
+  } else {
+    res.json({message:"email sent"})
+  }
+});
+});
 
 // Add routes, both API and view
 app.use(routes);
