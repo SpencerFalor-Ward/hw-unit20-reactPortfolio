@@ -27,16 +27,5 @@
     "install": "cd client && npm install",
     "build": "cd client && npm run build",
     "heroku-postbuild": "npm run build"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/SpencerFalor-Ward/hw-unit20-reactPortfolio.git"
-  },
-  "keywords": [],
-  "author": "SpencerFalor-Ward",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/SpencerFalor-Ward/hw-unit20-reactPortfolio/issues"
-  },
-  "homepage": "https://github.com/SpencerFalor-Ward/hw-unit20-reactPortfolio#readme"
-}
+  }
+  
