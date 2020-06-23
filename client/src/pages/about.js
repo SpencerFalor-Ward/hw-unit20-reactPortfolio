@@ -47,7 +47,7 @@ function About (){
                     </ul>
                 <br />
                 <p>
-                    Other than that, I have a B.S. in Cellular/Molecular Biology, an M.S. in Viticulture and Enology, and I taught English in South Korea for 3 years.
+                    Other than that, I have a M.S. in Viticulture and Enology, B.S. in Cellular/Molecular Biology, I'm a UC Davis certified full stack web developer and I taught English in South Korea for 3 years.
                 </p>
             </div>
         </section>
