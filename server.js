@@ -4,9 +4,8 @@ const path = require("path");
 const mongoose = require("mongoose");
 const routes = require("./routes");
 const bodyParser = require("body-parser");
-const nodemailer = require("nodemailer")
 const cors = require ('cors');
-// const sendMail = require("./client/src/components/mail")
+
 
 const PORT = process.env.PORT || 3001;
 
@@ -22,59 +21,11 @@ mongoose.connect(
 
 const mongoose_db = mongoose.connection;
 
-// contact form code may not need
-// app.get("/", (req, res) =>{
-//   res.sendfile(path.join(_dirname, "public"));
-// })
-
 // Define middlewares here for parsing req.body:
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use(cors());
 
-app.get("/", ()=>{
-  resizeBy.send("Welcome to my form")
-})
-
-app.post("/api/forma", (req,res)=>{
-  let data = req.body
-  let smtpTransport = nodemailer.createTransport({
-    service:"Gmail",
-    port:465,
-    auth: {
-      user:"sfwportfoliomessages@gmail.com",
-      password: "git4tm3!"
-    }
-  });
-
-let mailOptions = {
-  from: data.email,
-  to:"sfwportfoliomessages@gmail.com",
-  subject: `Message from ${data.firstName}`,
-  html:`
-  <h3>Information</h3>
-  <ul>
-  <li>firstName: ${data.firstName}</li>
-  <li>lastName: ${data.lastName}</li>
-  <li>email: ${data.email}</li>
-  </ul>
-  <h3>Message</h3>
-  <p>${data.message}</p>
-<p>${data.time}</p>
-  `
-};
-
-smtpTransport.sendMail(mailOptions, (error, res)=>{
-  if(error) {
-    res.send(error)
-  } else {
-    res.send("Success")
-  }
-})
-
-smtpTransport.close();
-
-})
 
 // Configure body parsing for AJAX requests
 app.use(express.urlencoded({ extended: true }));
@@ -84,7 +35,6 @@ app.use(express.json());
 if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));
 }
-
 
 
 // Currently serving static assets

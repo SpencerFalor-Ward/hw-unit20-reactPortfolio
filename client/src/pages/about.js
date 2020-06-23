@@ -14,7 +14,7 @@ function About (){
             <img id="profilePic" rel="profilepic" src={robinWeddingImg} alt="Thats me"/>
             <div className="aboutMe">
                 <p>
-                    Sup! Thank you for checking me out.
+                    Greetings! Thank you for checking me out.
                 </p>
                 <br />
                 <p id="thingsAboutMe">Things you should know about me:

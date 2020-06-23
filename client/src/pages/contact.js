@@ -26,7 +26,7 @@ handleFirstName = (e)=>{
   })
 }
 
-handleLasttName = (e)=>{
+handleLastName = (e)=>{
   this.setState({
     lastName: e.target.value
   })
@@ -53,12 +53,13 @@ handleFormSubmit = (event) => {
        message: this.state.message,
        time: this.state.time
     }
-    axios.post("/api/messages", messageData)
+
+  axios.post("/api/messages", messageData)
     .then((res)=>{
       console.log(`handleformSubmit: ${res}`)
       this.setState({
         sent:true
-      }, this.resetForm())
+      }, this.resetForm());
     })
     .catch((err)=>{
       console.log(`handleformSubmit: ${err}`)
@@ -71,8 +72,8 @@ this.setState({
   lastName: "",
   email: "",
   message: "",
-  // time: moment().format('LLLL'),
-  // sent: false
+  time: moment().format('LLLL'),
+  sent: false
 })
 
 setTimeout(()=>{
@@ -81,6 +82,7 @@ setTimeout(()=>{
   })
 }, 3000)
 }
+
 render (){
 return (
     <section id="main-info" className="clearfix">
@@ -92,7 +94,7 @@ return (
       {/* <form className="form-group form" action="/action_page.php"> */}
       <form 
        className="form-group form" 
-       method= 'POST'
+      //  method= 'POST'
        onSubmit={this.handleFormSubmit}
        >
         <div className="clearfix">
@@ -123,6 +125,7 @@ return (
                 name="email" 
                 placeholder="Email"
                 value ={this.state.email}
+                required
               />
                 <label form="message">Message </label>
               <TextArea
@@ -132,10 +135,11 @@ return (
                 placeholder="Say summ'n....or not, school"
                 value ={this.state.message}
               />
-              <div className="msg">You've communed with the aether</div>
+              <div className={this.state.sent ? "msg msgAppear" : "msg"}>You've communed with the aether</div>
               <FormBtn
                 type="submit" 
                 id="sendButton"
+                // onClick={this.handleFormSubmit}
               >
                 Send into the aether
               </FormBtn>
@@ -147,6 +151,7 @@ return (
 )
 }
 }
+
 export default Contact
 
 // const  Contact = (props) => {

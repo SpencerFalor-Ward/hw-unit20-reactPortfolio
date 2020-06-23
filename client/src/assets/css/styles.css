@@ -142,11 +142,17 @@ body {
   color: #ffffff;
   bottom: 0%;
   text-align:center;
+
 }
+
+/* .footerLinks{
+  display: inline;
+} */
 
 .nav-link
 {
   padding: 0;
+  /* display: inline; */
 }
 
 /* Styling for form on contact page */
@@ -335,5 +341,4 @@ img {
 
 .msgAppear{
   display: block;
-
 }
