@@ -27,6 +27,9 @@ const mongoose_db = mongoose.connection;
 //   res.sendfile(path.join(_dirname, "public"));
 // })
 
+// Define middlewares here for parsing req.body:
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
 app.use(cors());
 
 app.get("/", ()=>{
@@ -57,6 +60,7 @@ let mailOptions = {
   </ul>
   <h3>Message</h3>
   <p>${data.message}</p>
+<p>${data.time}</p>
   `
 };
 
@@ -81,24 +85,10 @@ if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));
 }
 
-// Define middlewares here for parsing req.body:
-app.use(bodyParser.urlencoded({ extended: false }));
-app.use(bodyParser.json());
+
 
 // Currently serving static assets
 app.use(express.static(path.join(__dirname, "public")));
-
-// app.post("/api/contactForm", (req, res)=>{
-//   const {subject, email, text} = req.body;
-// console.log("Data", req.body)
-// sendMail(email, subject, text, function (err, data){
-//   if (err){
-//     res.status(500).json({message:"Internal error"})
-//   } else {
-//     res.json({message:"email sent"})
-//   }
-// });
-// });
 
 // Add routes, both API and view
 app.use(routes);
