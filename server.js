@@ -4,7 +4,9 @@ const path = require("path");
 const mongoose = require("mongoose");
 const routes = require("./routes");
 const bodyParser = require("body-parser");
-const sendMail = require("./client/src/components/mail")
+const nodemailer = require("nodemailer")
+const cors = require ('cors');
+// const sendMail = require("./client/src/components/mail")
 
 const PORT = process.env.PORT || 3001;
 
@@ -25,6 +27,51 @@ const mongoose_db = mongoose.connection;
 //   res.sendfile(path.join(_dirname, "public"));
 // })
 
+app.use(cors());
+
+app.get("/", ()=>{
+  resizeBy.send("Welcome to my form")
+})
+
+app.post("/api/forma", (req,res)=>{
+  let data = req.body
+  let smtpTransport = nodemailer.createTransport({
+    service:"Gmail",
+    port:465,
+    auth: {
+      user:"sfwportfoliomessages@gmail.com",
+      password: "git4tm3!"
+    }
+  });
+
+let mailOptions = {
+  from: data.email,
+  to:"sfwportfoliomessages@gmail.com",
+  subject: `Message from ${data.firstName}`,
+  html:`
+  <h3>Information</h3>
+  <ul>
+  <li>firstName: ${data.firstName}</li>
+  <li>lastName: ${data.lastName}</li>
+  <li>email: ${data.email}</li>
+  </ul>
+  <h3>Message</h3>
+  <p>${data.message}</p>
+  `
+};
+
+smtpTransport.sendMail(mailOptions, (error, res)=>{
+  if(error) {
+    res.send(error)
+  } else {
+    res.send("Success")
+  }
+})
+
+smtpTransport.close();
+
+})
+
 // Configure body parsing for AJAX requests
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
@@ -40,19 +87,18 @@ app.use(bodyParser.json());
 
 // Currently serving static assets
 app.use(express.static(path.join(__dirname, "public")));
-// app.use("/Images", express.static("Images")) //fix path for images
 
-app.post("/api/contactForm", (req, res)=>{
-  const {subject, email, text} = req.body;
-console.log("Data", req.body)
-sendMail(email, subject, text, function (err, data){
-  if (err){
-    res.status(500).json({message:"Internal error"})
-  } else {
-    res.json({message:"email sent"})
-  }
-});
-});
+// app.post("/api/contactForm", (req, res)=>{
+//   const {subject, email, text} = req.body;
+// console.log("Data", req.body)
+// sendMail(email, subject, text, function (err, data){
+//   if (err){
+//     res.status(500).json({message:"Internal error"})
+//   } else {
+//     res.json({message:"email sent"})
+//   }
+// });
+// });
 
 // Add routes, both API and view
 app.use(routes);
