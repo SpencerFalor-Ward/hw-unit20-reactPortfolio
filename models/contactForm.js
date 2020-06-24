@@ -13,6 +13,6 @@ const ContactSchema = new Schema ({
       },
 })
 
-const ContactFrom = mongoose.model("ContactForm", ContactSchema);
+const ContactFrom = mongoose.model("ContactForm", ContactSchema,"sfwReactPortfolio");
 
 module.exports = ContactFrom;
