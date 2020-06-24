@@ -1,7 +1,6 @@
 {
   "name": "hw-unit20-reactPortfolio",
   "version": "1.0.0",
-  "homepage": "https://sfw-portfolio-v4.herokuapp.com/",
   "engines": {
     "node": "12.x"
   },
