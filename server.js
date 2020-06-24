@@ -38,7 +38,7 @@ if (process.env.NODE_ENV === "production") {
 
 
 // Currently serving static assets
-app.use(express.static(path.join(__dirname, "public")));
+app.use(express.static(path.join(__dirname, "public", "index.html")));
 
 // Add routes, both API and view
 app.use(routes);
