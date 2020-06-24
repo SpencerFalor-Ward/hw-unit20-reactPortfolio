@@ -1,6 +1,6 @@
 import React, {Component} from "react"
 import { Input, TextArea, FormBtn } from "../components/form";
-import "../assets/css/styles.css"
+import "../../public/assets/css/styles.css"
 // import API from "../utils/API";
 import axios from "axios";
 import moment from "moment"
