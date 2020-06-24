@@ -46,12 +46,17 @@ app.use(express.static(path.join(__dirname, "public")));
 // Add routes, both API and view
 app.use(routes);
 
-// Verifies connection to db on desired port. 
-mongoose_db.once("open", function() {
-  app.listen(PORT, () => {console.log("Server Listening on Port", PORT)});
-})
+// // Verifies connection to db on desired port. 
+// mongoose_db.once("open", function() {
+//   app.listen(PORT, () => {console.log("Server Listening on Port", PORT)});
+// })
 
-// Throws error on failed db connection check. 
-mongoose_db.on("error", function() {
-  console.error("database failed to open");
-})
+// // Throws error on failed db connection check. 
+// mongoose_db.on("error", function() {
+//   console.error("database failed to open");
+// })
+
+// Start the API server
+app.listen(PORT, () =>
+  console.log(`🌎  ==> API Server now listening on PORT ${PORT}!`)
+);
