@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/hw-unit20-reactPortfolio/static/css/main.62016933.chunk.css",
+    "main.css": "/hw-unit20-reactPortfolio/static/css/main.82971802.chunk.css",
     "main.js": "/hw-unit20-reactPortfolio/static/js/main.77eaeac2.chunk.js",
     "main.js.map": "/hw-unit20-reactPortfolio/static/js/main.77eaeac2.chunk.js.map",
     "runtime-main.js": "/hw-unit20-reactPortfolio/static/js/runtime-main.f12bf6d4.js",
@@ -8,9 +8,9 @@
     "static/js/2.42c46c92.chunk.js": "/hw-unit20-reactPortfolio/static/js/2.42c46c92.chunk.js",
     "static/js/2.42c46c92.chunk.js.map": "/hw-unit20-reactPortfolio/static/js/2.42c46c92.chunk.js.map",
     "index.html": "/hw-unit20-reactPortfolio/index.html",
-    "precache-manifest.efee0e3ca2f2350462298fd9e0762993.js": "/hw-unit20-reactPortfolio/precache-manifest.efee0e3ca2f2350462298fd9e0762993.js",
+    "precache-manifest.ca6c8ee530426abf15ccafa74f567a8a.js": "/hw-unit20-reactPortfolio/precache-manifest.ca6c8ee530426abf15ccafa74f567a8a.js",
     "service-worker.js": "/hw-unit20-reactPortfolio/service-worker.js",
-    "static/css/main.62016933.chunk.css.map": "/hw-unit20-reactPortfolio/static/css/main.62016933.chunk.css.map",
+    "static/css/main.82971802.chunk.css.map": "/hw-unit20-reactPortfolio/static/css/main.82971802.chunk.css.map",
     "static/js/2.42c46c92.chunk.js.LICENSE.txt": "/hw-unit20-reactPortfolio/static/js/2.42c46c92.chunk.js.LICENSE.txt",
     "static/media/CV 2020 resize.png": "/hw-unit20-reactPortfolio/static/media/CV 2020 resize.32600913.png",
     "static/media/HW-3-passwordGenerator-resize.png": "/hw-unit20-reactPortfolio/static/media/HW-3-passwordGenerator-resize.63b3ed61.png",
@@ -29,7 +29,7 @@
   "entrypoints": [
     "static/js/runtime-main.f12bf6d4.js",
     "static/js/2.42c46c92.chunk.js",
-    "static/css/main.62016933.chunk.css",
+    "static/css/main.82971802.chunk.css",
     "static/js/main.77eaeac2.chunk.js"
   ]
 }
