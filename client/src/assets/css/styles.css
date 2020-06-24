@@ -1,20 +1,20 @@
 * {
   box-sizing: border-box;
 }
-/* "*" is selecting all elemnets for box-sizing */
+
 
 body {
   background-color: #777;
   background-image: url(../images/subtle_white_feathers.png);
 }
 
-/* Container for all elements to maintain the 960px width */
+
 .container {
   position: "";
   width: 960px;
 }
 
-/* Container for the header at top of page */
+
 .head {
   width: 100%;
   padding: 0 3%;
@@ -26,7 +26,7 @@ body {
   position: relative;
 }
 
-/* the container within the header for my name */
+
 .header {
   background-color: #7a9b99;
   color: rgb(233, 233, 233);
@@ -40,13 +40,13 @@ body {
   border: 0px 1px solid rgb(220, 220, 220);
 }
 
-/* my name at the top of site */
+
 .name {
   position: relative;
   font-size: x-large;
 }
 
-/* bootstrap navbar container */
+
 .navbar {
   display: flex;
   width: 100%;
@@ -56,12 +56,12 @@ body {
   background-color: rgb(233,233,233)
 }
 
-/* Nav links to pages on site */
+
 #navbarNav {
   justify-content: flex-end;
 }
 
-/* Nav links to each page */
+
 #aboutlink {
   border-right: 1px solid #777;
 }
@@ -89,7 +89,7 @@ body {
   list-style-type: disc;
 }
 
-/* main-info title, About,Contact,Portfolio */
+
 .logo {
   border-bottom: 1px solid darkgrey;
   position: relative;
@@ -102,7 +102,7 @@ body {
   color: #7a9b99;
 }
 
-/* picture on about page */
+
 #profilePic {
   height: 420px;
   width: 280px;
@@ -113,7 +113,7 @@ body {
   margin: 30px;
 }
 
-/* Container for main body of info on each page */
+
 #main-info {
   position: relative;
   background-color: rgb(233, 233, 233);
@@ -145,17 +145,13 @@ body {
 
 }
 
-/* .footerLinks{
-  display: inline;
-} */
-
 .nav-link
 {
   padding: 0;
-  /* display: inline; */
+
 }
 
-/* Styling for form on contact page */
+
 .form {
   margin: 2% 12.5%;
   clear: both;
@@ -183,13 +179,12 @@ textarea {
     border-image: initial;
 }
 
-/* Styling for the photo grid on portfolio page */
+
 .projectGrid {
   display: grid;
   padding: 0;
   margin: 0;
   grid-template-columns: repeat(2, 1fr);
-  /* grid-template-rows: repeat(24, 5vw); */
   grid-gap: 15px;
 }
 
@@ -246,9 +241,8 @@ textarea {
   grid-column-end: 2;
   grid-row-start: 1;
   grid-row-end: 8;
-  /* max-width: auto; */
-  /* height: auto; */
 }
+
 #project3 {
   order: 3;
   align-items: flex-start;
