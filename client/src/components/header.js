@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import supImg from "../../public/assets/images/supButton.png"
-import myPageImg from "../../public/assets/images/sitePlaceHolder2.PNG"
+import supImg from "../assets/images/supButton.png"
+import myPageImg from "../assets/images/sitePlaceHolder2.PNG"
 
 
 function Nav() {

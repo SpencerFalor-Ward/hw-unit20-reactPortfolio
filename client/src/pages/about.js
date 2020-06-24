@@ -1,6 +1,6 @@
 import React from "react"
-import "../../public/assets/css/syles.css"
-import robinWeddingImg from "../../public/assets/images/Robin_wedding_hangingphoto.JPG"
+import "../assets/css/syles.css"
+import robinWeddingImg from "../assets/images/Robin_wedding_hangingphoto.JPG"
 
 
 

@@ -1,12 +1,12 @@
-import weatherImg from "../../public/assets/images/HW-6-weatherGeneratorresize.png"
-import emojiImg from "../../public/assets/images/HW-groupProject1-resize.png"
-import quizImg from "../../public/assets/images/HW-4-javaQuiz-resize.png"
-import passwordImg from "../../public/assets/images/HW-3-passwordGenerator-resize.png"
-import plannerImg from "../../public/assets/images/HW-5-dailyPlaner-resize.png"
-import workoutImg from "../../public/assets/images/fitnessTracker-resize.png"
-import eatAhImg from "../../public/assets/images/eatAhBurger-resize.jpg"
-import budgetImg from "../../public/assets/images/budgetTracker-resize.png"
-import cvImg from "../../public/assets/images/CV 2020 resize.png"
+import weatherImg from "../assets/images/HW-6-weatherGeneratorresize.png"
+import emojiImg from "../assets/images/HW-groupProject1-resize.png"
+import quizImg from "../assets/images/HW-4-javaQuiz-resize.png"
+import passwordImg from "../assets/images/HW-3-passwordGenerator-resize.png"
+import plannerImg from "../assets/images/HW-5-dailyPlaner-resize.png"
+import workoutImg from "../assets/images/fitnessTracker-resize.png"
+import eatAhImg from "../assets/images/eatAhBurger-resize.jpg"
+import budgetImg from "../assets/images/budgetTracker-resize.png"
+import cvImg from "../assets/images/CV 2020 resize.png"
 
 
 
