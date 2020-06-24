@@ -1,6 +1,5 @@
 {
   "name": "app",
-  "homepage": "https://SpencerFalor-Ward.github.io/hw-unit20-reactPortfolio",
   "version": "0.1.0",
   "private": true,
   "proxy": "http://localhost:3001/",
