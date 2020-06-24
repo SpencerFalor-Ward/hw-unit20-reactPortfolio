@@ -1,6 +1,7 @@
 import React from "react"
-import "../assets/css/styles.css"
-import robinWeddingImg from "../assets/images/Robin_wedding_hangingphoto.JPG"
+import "../../public/assets/css/syles.css"
+import robinWeddingImg from "../../public/assets/images/Robin_wedding_hangingphoto.JPG"
+
 
 
 function About (){
