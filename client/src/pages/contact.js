@@ -3,9 +3,7 @@ import { Input, TextArea, FormBtn } from "../components/form";
 import "../assets/css/styles.css"
 // import API from "../utils/API";
 import axios from "axios";
-
-
-const moment = require("moment")
+import moment from "moment"
 
 class  Contact extends Component {
 
