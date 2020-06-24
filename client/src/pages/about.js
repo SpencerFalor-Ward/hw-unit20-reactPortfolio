@@ -1,5 +1,5 @@
 import React from "react"
-import "../assets/css/syles.css"
+import "../assets/css/styles.css"
 import robinWeddingImg from "../assets/images/Robin_wedding_hangingphoto.JPG"
 
 
@@ -11,7 +11,6 @@ function About (){
         <h1 className="logo">
             <p>About me</p>
             </h1>
-            {/* <img id="profilePic" rel="profilepic" src="../../src/assets/images/Robin_wedding_hangingphoto.JPG" alt="Thats me"/> */}
             <img id="profilePic" rel="profilepic" src={robinWeddingImg} alt="Thats me"/>
             <div className="aboutMe">
                 <p>

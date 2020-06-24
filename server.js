@@ -12,31 +12,31 @@ const PORT = process.env.PORT || 3001;
 
 
 // Connect to the Mongo DB
-// mongoose.connect(
-//     process.env.MONGODB_URI || "mongodb://localhost/sfwReactPortfolio",
-//     {
-//   useNewUrlParser: true,
-//   useUnifiedTopology: true,
-//   useCreateIndex: true,
-//   useFindAndModify: false
-// }
-// );
+mongoose.connect(
+    process.env.MONGODB_URI || "mongodb://localhost/sfwReactPortfolio",
+    {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+  // useCreateIndex: true,
+  useFindAndModify: false
+}
+);
 
 
 
 mongoose.set('useCreateIndex', true);
 
-mongoose.createConnection(
-  process.env.MONGODB_URI || "mongodb://localhost/sfwReactPortfolio", 
-  {   
-  useUnifiedTopology: true,
-  useNewUrlParser: true,
-  useFindAndModify: false,
-});
+// mongoose.createConnection(
+//   process.env.MONGODB_URI || "mongodb://localhost/sfwReactPortfolio", 
+//   {   
+//   useUnifiedTopology: true,
+//   useNewUrlParser: true,
+//   useFindAndModify: false,
+// });
 
 // /** */ const Book = mongoConnection.model('Book', bookSchema /*, 'COLLECTION_NAME'*/);
 
-// const mongoose_db = mongoose.connection;
+const mongoose_db = mongoose.connection;
 
 // Define middlewares here for parsing req.body:
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -61,16 +61,16 @@ app.use(express.static(path.join(__dirname, "public")));
 app.use(routes);
 
 // // Verifies connection to db on desired port. 
-// mongoose_db.once("open", function() {
-//   app.listen(PORT, () => {console.log("Server Listening on Port", PORT)});
-// })
+mongoose_db.once("open", function() {
+  app.listen(PORT, () => {console.log("Server Listening on Port", PORT)});
+})
 
 // // Throws error on failed db connection check. 
-// mongoose_db.on("error", function() {
-//   console.error("database failed to open");
-// })
+mongoose_db.on("error", function() {
+  console.error("database failed to open");
+})
 
 // Start the API server
-app.listen(PORT, () =>
-  console.log(`🌎  ==> API Server now listening on PORT ${PORT}!`)
-);
+// app.listen(PORT, () =>
+//   console.log(`🌎  ==> API Server now listening on PORT ${PORT}!`)
+// );

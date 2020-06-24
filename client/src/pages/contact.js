@@ -87,18 +87,14 @@ return (
       <h1 className="logo">
         <p>Contact</p>
       </h1>
-
-      {/* <form className="form-group form" action="/action_page.php"> */}
       <form 
        className="form-group form" 
-      //  method= 'POST'
        onSubmit={this.handleFormSubmit}
        >
         <div className="clearfix">
           <label form="fname">First Name </label>
         <Input
                 onChange={this.handleFirstName}
-                // type="text"
                 id="fname"
                 name="firstName"
                 placeholder="Your name..."
