@@ -50,7 +50,8 @@ app.use(express.json());
 
 // Serve up static assets
 if (process.env.NODE_ENV === "production") {
-  app.use("/hw-unit20-reactPortfolio/", express.static("client/build"));
+  app.use(express.static("client/build"));
+  // app.use("/hw-unit20-reactPortfolio/", express.static("client/build"));
 }
 
 
