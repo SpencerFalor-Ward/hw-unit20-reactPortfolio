@@ -12,15 +12,29 @@ const PORT = process.env.PORT || 3001;
 
 
 // Connect to the Mongo DB
-mongoose.connect(
-    process.env.MONGODB_URI || "mongodb://localhost/sfwReactPortfolio",
-    {
-  useNewUrlParser: true,
+// mongoose.connect(
+//     process.env.MONGODB_URI || "mongodb://localhost/sfwReactPortfolio",
+//     {
+//   useNewUrlParser: true,
+//   useUnifiedTopology: true,
+//   useCreateIndex: true,
+//   useFindAndModify: false
+// }
+// );
+
+
+
+mongoose.set('useCreateIndex', true);
+
+mongoose.createConnection(
+  process.env.MONGODB_URI || "mongodb://localhost/sfwReactPortfolio", 
+  {   
   useUnifiedTopology: true,
-  useCreateIndex: true,
-  useFindAndModify: false
-}
-);
+  useNewUrlParser: true,
+  useFindAndModify: false,
+});
+
+// /** */ const Book = mongoConnection.model('Book', bookSchema /*, 'COLLECTION_NAME'*/);
 
 // const mongoose_db = mongoose.connection;
 
