@@ -22,7 +22,7 @@ mongoose.connect(
 }
 );
 
-const mongoose_db = mongoose.connection;
+// const mongoose_db = mongoose.connection;
 
 // Define middlewares here for parsing req.body:
 app.use(bodyParser.urlencoded({ extended: false }));
