@@ -43,6 +43,12 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use(cors());
 
+// Currently serving static assets
+app.use(express.static(path.join(__dirname, "public")));
+
+
+// Add routes, both API and view
+app.use(routes);
 
 // Configure body parsing for AJAX requests
 app.use(express.urlencoded({ extended: true }));
@@ -55,13 +61,6 @@ if (process.env.NODE_ENV === "production") {
   app.get("*", (req, res) => {
     res.sendfile(path.resolve(__dirname, "client", "build", "index.html"));
 })}
-
-// Currently serving static assets
-app.use(express.static(path.join(__dirname, "public")));
-
-
-// Add routes, both API and view
-app.use(routes);
 
 // // Verifies connection to db on desired port. 
 mongoose_db.once("open", function() {
