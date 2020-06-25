@@ -41,6 +41,7 @@ const mongoose_db = mongoose.connection;
 // Define middlewares here for parsing req.body:
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
+app.use(express.static(path.join(__dirname, "client", "build")))
 app.use(cors());
 
 // Currently serving static assets
