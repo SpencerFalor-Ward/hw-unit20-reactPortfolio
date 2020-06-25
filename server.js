@@ -52,11 +52,13 @@ app.use(express.json());
 if (process.env.NODE_ENV === "production") {
   // app.use(express.static("client/build"));
   app.use("/hw-unit20-reactPortfolio/", express.static("client/build"));
-}
-
+  app.get("*", (req, res) => {
+    res.sendfile(path.resolve(__dirname, "client", "build", "index.html"));
+})}
 
 // Currently serving static assets
 app.use(express.static(path.join(__dirname, "public")));
+
 
 // Add routes, both API and view
 app.use(routes);
