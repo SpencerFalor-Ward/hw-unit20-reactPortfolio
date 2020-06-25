@@ -37,6 +37,7 @@ body {
   position: relative;
   margin: 0%;
   border: 0px 1px solid rgb(220, 220, 220);
+  font-family: "Bree Serif";
 }
 
 
@@ -121,6 +122,8 @@ body {
   padding: 2%;
   display: block;
   background-image: url(../images/rockywall.png);
+  font-family: "Bree Serif";
+  color: #5a7573;
 }
 
 .clearfix::after {
@@ -138,16 +141,20 @@ body {
   margin-top: 0.1%;
   border-top: 3px solid #7a9b99;
   background-color: #666666;
-  color: #ffffff;
+  color: #7a9b99;
   bottom: 0%;
   text-align:center;
+  font-family: "Bree Serif";
+}
 
+i {
 }
 
 .nav-link
 {
   padding: 0;
-
+  font-family: "Bree Serif";
+  color: #6e8d8b !important;
 }
 
 
@@ -171,11 +178,12 @@ textarea {
 #sendButton {
   width: auto;
   border-color: rgb(233,233,233);
-  color: rgb(233, 233, 233);
+  color: rgb(233, 231, 231);
   background-color:  #7a9b99;
   border-width: 2px;
     border-style: outset;
     border-image: initial;
+    font-family: "Bree Serif";
 }
 
 
@@ -329,6 +337,7 @@ img {
     border-style: outset;
     border-image: initial;
     border-radius: 5px;
+    font-family: "Bree Serif";
     display: none;
 }
 

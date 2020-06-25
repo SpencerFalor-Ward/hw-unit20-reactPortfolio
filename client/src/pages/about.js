@@ -27,11 +27,14 @@ function About (){
                             For my day job, I make wine, teach about making wine and manage a winery at Napa Valley College
                         </li>
                         <li>
+                            For fun I study computer coding. I love the complexity, intricacy and precision of it. As well as the thrill of solving a puzzle after hours/days/weeks of work and seeing your code function!
+                        </li>
+                        <li>
                             I love all genres of music and especially discovering new music.
                         </li>
                         <li>
                             I'd say the same for movies, although these days I don't have as much free time to watch as many as I'd like
-                                </li>
+                        </li>
                         <li>
                             I absorb audiobooks
                         </li>
@@ -44,11 +47,10 @@ function About (){
                         <li>
                             I can appear to be very serious, however, most of the time I am quite the opposite
                         </li>
+                        <li>
+                        Other than that, I have a M.S. in Viticulture and Enology, B.S. in Cellular/Molecular Biology, I'm a UC Davis certified full stack web developer and I taught English in South Korea for 3 years.
+                        </li>
                     </ul>
-                <br />
-                <p>
-                    Other than that, I have a M.S. in Viticulture and Enology, B.S. in Cellular/Molecular Biology, I'm a UC Davis certified full stack web developer and I taught English in South Korea for 3 years.
-                </p>
             </div>
         </section>
     )
