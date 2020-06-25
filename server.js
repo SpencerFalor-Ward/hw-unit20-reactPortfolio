@@ -26,16 +26,6 @@ mongoose.connect(
 
 mongoose.set('useCreateIndex', true);
 
-// mongoose.createConnection(
-//   process.env.MONGODB_URI || "mongodb://localhost/sfwReactPortfolio", 
-//   {   
-//   useUnifiedTopology: true,
-//   useNewUrlParser: true,
-//   useFindAndModify: false,
-// });
-
-// /** */ const Book = mongoConnection.model('Book', bookSchema /*, 'COLLECTION_NAME'*/);
-
 const mongoose_db = mongoose.connection;
 
 // Define middlewares here for parsing req.body:
