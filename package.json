@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "engines": {
     "node": "12.x",
-    "npm":"6.x"
+    "npm": "6.x"
   },
   "description": "portfolio v4 created with REACT",
   "main": "server.js",
@@ -17,8 +17,8 @@
     "mongodb": "^3.5.9",
     "mongoose": "^5.9.19",
     "nodemailer": "^6.4.10",
-    
     "path": "^0.12.7",
+    "react-bootstrap": "^1.0.1",
     "react-router": "^5.2.0",
     "react-router-dom": "^5.2.0"
   },

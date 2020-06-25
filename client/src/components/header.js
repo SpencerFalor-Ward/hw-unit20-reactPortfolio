@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { Navbar } from "react-bootstrap";
 import supImg from "../assets/images/supButton.png"
 import myPageImg from "../assets/images/sitePlaceHolder2.PNG"
 
@@ -8,7 +9,7 @@ function Nav() {
   return (
     <header className="head sticky-top d-flex">
 
-            <nav className="navbar navbar-expand-lg navbar-light">
+            <Navbar className="navbar navbarNav navbar-expand-lg navbar-light">
 
                 <a className="navbar-brand" rel="thisIsMyPage" href= {myPageImg}>
                   <img src={supImg} width="30" height="30" className="d-inline-block align-top" alt=""/>
@@ -35,8 +36,7 @@ function Nav() {
                   </li>
                 </ul>
               </div>
-              
-            </nav>
+            </Navbar>
     </header>
   );
 }
