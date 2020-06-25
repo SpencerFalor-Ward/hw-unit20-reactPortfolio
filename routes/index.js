@@ -48,7 +48,8 @@ const ContactForm = require('../models/contactForm');
         console.log(err)
         return
       }
-      res.json(response)
+      // res.json(response)
+      res.send(response)
     }
   )
   })
