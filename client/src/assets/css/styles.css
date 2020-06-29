@@ -71,7 +71,7 @@ body {
 }
 
 #portfoliolink {
-  padding: "";
+  border-right: 1px solid #777;
 }
 
 .aboutMe {
@@ -101,7 +101,9 @@ body {
   width: 30%;
   color: #7a9b99;
 }
-
+.emailAddress{
+  color: #7a9b99;
+}
 
 #profilePic {
   height: 420px;
@@ -132,10 +134,14 @@ body {
   display: table;
 }
 
-.footer {
+#footer{
   position: sticky;
   z-index: 200;
   width: 100%;
+
+}
+
+.footerLinks {
   padding-top: 1.5%;
   padding-bottom: 1.5%;
   margin-top: 0.1%;
@@ -145,11 +151,30 @@ body {
   bottom: 0%;
   text-align:center;
   font-family: "Bree Serif";
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: space-around;  
 }
 
-i {
-  height: 5%;
-  width: 5%;
+#footerIcon{
+  font-size: 450%;
+}
+
+.icons{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: space-around;
+  font-size: 800%;
+}
+
+i
+{
+  margin: 5%;
 }
 
 .nav-link
@@ -336,13 +361,14 @@ img {
   color: rgb(233, 233, 233);
   background-color:  #7a9b99;
   border-width: 2px;
-    border-style: outset;
-    border-image: initial;
-    border-radius: 5px;
-    font-family: "Bree Serif";
-    display: none;
+  border-style: outset;
+  border-image: initial;
+  border-radius: 5px;
+  font-family: "Bree Serif";
+  display: none;
 }
 
 .msgAppear{
   display: block;
 }
+

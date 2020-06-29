@@ -24,7 +24,7 @@ function Nav() {
               <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul className="navbar-nav justify-content-end">
                   <li className="nav-item active">
-                    <Link className="nav-link" id="aboutlink" to="/about">About <span className="sr-only">(current)</span></Link>
+                    <Link className="nav-link" id="aboutlink" to="/about">About<span className="sr-only">(current)</span></Link>
                   </li>
                   <li className="nav-item">
                     <Link className="nav-link" id="contactlink" to="/contact">Contact</Link>
@@ -33,6 +33,7 @@ function Nav() {
                     <Link className="nav-link" id="portfoliolink" to="/portfolio">Portfolio</Link>
                   </li>
                   <li className="nav-item">
+                  <Link className="nav-link" id="techSkillslink" to="/techSkills">Tech Skills</Link>
                   </li>
                 </ul>
               </div>

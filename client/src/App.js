@@ -5,6 +5,7 @@ import Footer from "../src/components/footer"
 import Portfolio from "../src/pages/portfolio"
 import About from "../src/pages/about"
 import Contact from "../src/pages/contact"
+import TechSkills from "../src/pages/techSkills"
 
 
 
@@ -22,6 +23,9 @@ function App() {
           </Route>
           <Route exact path="/portfolio">
             <Portfolio />
+          </Route>
+          <Route exact path="/techSkills">
+            <TechSkills />
           </Route>
         </Switch>
     </Router>
