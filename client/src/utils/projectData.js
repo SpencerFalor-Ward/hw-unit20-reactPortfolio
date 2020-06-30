@@ -6,7 +6,8 @@ import plannerImg from "../assets/images/HW-5-dailyPlaner-resize.png"
 import workoutImg from "../assets/images/fitnessTracker-resize.png"
 import eatAhImg from "../assets/images/eatAhBurger-resize.jpg"
 import budgetImg from "../assets/images/budgetTracker-resize.png"
-import cvImg from "../assets/images/CV 2020 resize.png"
+import cvImg from "../assets/images/SFW-DEV-CV-2020-resize.jpg"
+import cvPdf from "../assets/Spencer Falor-Ward DEV CV 2020.pdf"
 
 
 
@@ -69,7 +70,7 @@ var arr = [{
   alt:"Online/Offline budget tracker",
   title:"These numbers don't lie"
 },{
-  url:"./assets/Spencer Falor-Ward CV 2020.pdf",
+  url:cvPdf,
   id:"project9",
   src: cvImg,
   rel:"placeholder",

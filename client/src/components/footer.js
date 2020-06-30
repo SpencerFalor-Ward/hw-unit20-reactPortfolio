@@ -13,7 +13,7 @@ return(
     Copyright&copy;
     </div>
     <a className="nav-link" href="https://www.linkedin.com/in/spencer-falor-ward-59a16494">
-        <i class="devicon-linkedin-plain" id="footerIcon"></i>
+        <i className="devicon-linkedin-plain" id="footerIcon"></i>
         </a>
     </div>
 </footer>

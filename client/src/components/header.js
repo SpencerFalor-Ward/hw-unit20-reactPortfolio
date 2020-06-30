@@ -12,7 +12,7 @@ function Nav() {
             <Navbar className="navbar navbarNav navbar-expand-lg navbar-light">
 
                 <a className="navbar-brand" rel="thisIsMyPage" href= {myPageImg}>
-                  <img src={supImg} width="30" height="30" className="d-inline-block align-top" alt=""/>
+                    <img src={supImg} width="30" height="30" className="d-inline-block align-top" alt="Sup"/>
                 </a>
                 <div className="header">
                 <h1 id="name">
