@@ -27,13 +27,16 @@ function Nav() {
                     <Link className="nav-link" id="aboutlink" to="/about">About<span className="sr-only">(current)</span></Link>
                   </li>
                   <li className="nav-item">
-                    <Link className="nav-link" id="contactlink" to="/contact">Contact</Link>
+                    <Link className="nav-link" id="cvlink" to="/cv">CV</Link>
                   </li>
                   <li className="nav-item">
                     <Link className="nav-link" id="portfoliolink" to="/portfolio">Portfolio</Link>
                   </li>
                   <li className="nav-item">
                   <Link className="nav-link" id="techSkillslink" to="/techSkills">Tech Skills</Link>
+                  </li>
+                  <li className="nav-item">
+                    <Link className="nav-link" id="contactlink" to="/contact">Contact</Link>
                   </li>
                 </ul>
               </div>

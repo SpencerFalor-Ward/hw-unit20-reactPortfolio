@@ -6,6 +6,7 @@ import Portfolio from "../src/pages/portfolio"
 import About from "../src/pages/about"
 import Contact from "../src/pages/contact"
 import TechSkills from "../src/pages/techSkills"
+import Cv from "../src/pages/cv"
 
 
 
@@ -18,14 +19,17 @@ function App() {
           <Route exact path={["/about","/", "/hw-unit20-reactPortfolio"]}>
             <About />
           </Route>
-          <Route  path="/contact">
-            <Contact />
+          <Route  path="/CV">
+            <Cv />
           </Route>
           <Route exact path="/portfolio">
             <Portfolio />
           </Route>
           <Route exact path="/techSkills">
             <TechSkills />
+          </Route>
+          <Route  path="/contact">
+            <Contact />
           </Route>
         </Switch>
     </Router>

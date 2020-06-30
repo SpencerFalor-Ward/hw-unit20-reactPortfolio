@@ -2,9 +2,14 @@
   box-sizing: border-box;
 }
 
+.App,
+#root,
+html,
 body {
   background-color: #777;
   background-image: url(../images/subtle_white_feathers.png);
+  height: 100%;
+  width: 100%;
 }
 
 
@@ -63,30 +68,19 @@ body {
 
 
 #aboutlink {
-  border-right: 1px solid #777;
+  border-right: 1px solid #7a9b99;
 }
 
-#contactlink {
-  border-right: 1px solid #777;
+#techSkillslink {
+  border-right: 1px solid #7a9b99;
+}
+
+#cvlink {
+  border-right: 1px solid #7a9b99;
 }
 
 #portfoliolink {
-  border-right: 1px solid #777;
-}
-
-.aboutMe {
-  position: relative;
-  line-height: 160%;
-  padding: 5%;
-}
-
-.aboutMe ul {
-  position: relative;
-  left: 3%;
-}
-
-.aboutMe ul li {
-  list-style-type: disc;
+  border-right: 1px solid #7a9b99;
 }
 
 
@@ -105,27 +99,58 @@ body {
   color: #7a9b99;
 }
 
-#profilePic {
-  height: 420px;
-  width: 280px;
-  float: left;
-  clear: left;
-  position: inline;
-  border: 2px rgb(220, 220, 220) solid;
-  margin: 30px;
-}
-
-
 #main-info {
   position: relative;
   background-color: rgb(233, 233, 233);
   border: 2px solid rgb(220, 220, 220);
   margin: 2% 3%;
   padding: 2%;
-  display: block;
+  flex-flow: column;
   background-image: url(../images/rockywall.png);
   font-family: "Bree Serif";
   color: #5a7573;
+}
+
+.aboutMe {
+  position: relative;
+  line-height: 160%;
+  padding: 5%;
+}
+
+.aboutMe ul {
+  position: relative;
+  left: 3%;
+}
+
+.aboutMe ul li {
+  list-style-type: disc;
+}
+
+#profilePic {
+  height: 420px;
+  width: 280px;
+  float: left;
+  clear: left;
+  position: relative;
+  border: 2px rgb(220, 220, 220) solid;
+  margin: 30px;
+  z-index: 200;
+}
+
+
+#main-info-cv {
+  position: relative;
+  background-color: rgb(233, 233, 233);
+  border: 2px solid rgb(220, 220, 220);
+  margin: 2% 3%;
+  padding: 2%;
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+  background-image: url(../images/rockywall.png);
+  font-family: "Bree Serif";
+  color: #5a7573;
+  height: 100%;
 }
 
 .clearfix::after {
@@ -138,7 +163,6 @@ body {
   position: sticky;
   z-index: 200;
   width: 100%;
-
 }
 
 .footerLinks {
@@ -193,7 +217,6 @@ i
 input {
   width: 100%;
   margin: 2% 0%;
-
 }
 
 textarea {
@@ -208,11 +231,19 @@ textarea {
   color: rgb(233, 231, 231);
   background-color:  #7a9b99;
   border-width: 2px;
-    border-style: outset;
-    border-image: initial;
-    font-family: "Bree Serif";
+  border-style: outset;
+  border-image: initial;
+  font-family: "Bree Serif";
 }
 
+.cv{
+  width: 100%;
+  height: 100%;
+}
+.cvBox{
+  width: 100%;
+  height: 100%;
+}
 
 .projectGrid {
   display: grid;
