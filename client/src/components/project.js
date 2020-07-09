@@ -5,6 +5,7 @@ function Project (props) {
 
 return (
 <>
+<div>
 <a
             href={props.url}
             id={props.id}
@@ -18,7 +19,15 @@ return (
               />
             </div>
           </a>
-          <br />
+          <div className="githubLink">
+          <a  href={props.code}>
+          <i className="devicon-github-plain" id="projectIcon">
+          </i>Check out the code here
+          <i className="devicon-github-plain" id="projectIcon">
+          </i>
+          </a>
+          </div>
+  </div>
           </>
 
 )

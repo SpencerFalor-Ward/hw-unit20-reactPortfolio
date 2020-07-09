@@ -86,7 +86,12 @@ return (
 
       <h1 className="logo">
         <p>Contact</p>
-        <a className="emailAddress" href="mailto:srpfw19@gmail.com">Click here to send me some digital correspondance</a>
+        <a className="emailAddress" href="mailto:srpfw19@gmail.com">
+          <u>Click here to contact me at srpfw19@gmail.com, or use the form below</u>
+          </a>
+          {/* <div>
+          Or use the form below
+          </div> */}
       </h1>
       <form 
        className="form-group form" 

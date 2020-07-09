@@ -22,7 +22,8 @@ return (
             src={project.src} 
             rel={project.rel} 
             alt={project.alt} 
-            title={project.title} 
+            title={project.title}
+            code={project.code} 
             />)}
         )}
         </div>

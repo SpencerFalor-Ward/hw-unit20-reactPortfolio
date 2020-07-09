@@ -99,6 +99,14 @@ body {
   color: #7a9b99;
 }
 
+.githubLink{
+  text-align:center;
+  margin-bottom:2%;
+}
+a{
+  color: #7a9b99 !important;
+
+}
 #main-info {
   position: relative;
   background-color: rgb(233, 233, 233);
@@ -187,6 +195,11 @@ body {
   font-size: 450%;
 }
 
+#projectIcon{
+  font-size: 130%;
+  margin-top: 20%;
+}
+
 .icons{
   display: flex;
   flex-direction: row;
@@ -255,6 +268,7 @@ textarea {
 
 .wrap {
   position: relative;
+  margin-bottom:2%;
 
 }
 
