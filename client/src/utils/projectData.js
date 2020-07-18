@@ -6,44 +6,45 @@ import plannerImg from "../assets/images/HW-5-dailyPlaner-resize.png"
 import workoutImg from "../assets/images/fitnessTracker-resize.png"
 import eatAhImg from "../assets/images/eatAhBurger-resize.jpg"
 import budgetImg from "../assets/images/budgetTracker-resize.png"
+import bookSearchImg from "../assets/images/bookSearch-resize.jpg"
 
 
 
 
 var arr = [
-  // {
+  {
 
-//   url:"https://spencerfalor-ward.github.io/HW-6-Wheather-Dashboard/",
-//   id:"project1",
-//   src: weatherImg,
-//   rel:"placeholder",
-//   alt:"Weather Dashboard",
-//   title:"Weather Dashboard",
-//   code:"https://github.com/SpencerFalor-Ward/HW-6-Wheather-Dashboard"
-// },
+  url:"https://book-searcher-sfw.herokuapp.com/",
+  id:"project1",
+  src: bookSearchImg,
+  rel:"placeholder",
+  alt:"Hungry knowledge book seacher",
+  title:"Hungry knowledge book seacher",
+  code:"https://github.com/SpencerFalor-Ward/Hungry-Knowledge-Book-Searcher"
+},
 {
-  url:"https://spencerfalor-ward.github.io/Bootcamp-group-project-1/",
+  url:"https://spencerfalor-ward.github.io/Emoji-Translator/",
   id:"project2",
   src: emojiImg,
   rel:"placeholder",
   alt:"Emoji translator",
   title:"Emoji translator",
-  code:"https://github.com/SpencerFalor-Ward/Bootcamp-group-project-1"
+  code:"https://github.com/SpencerFalor-Ward/Emoji-Translator"
 },{
   url:"https://spencerfalor-ward.github.io/HW-4-JavaScript-Quiz/",
   id:"project3",
   src: quizImg,
   rel:"placeholder",
-  alt:"JavaScript Quiz",
-  title:"JavaScript Quiz",
+  alt:"JavaScript quiz",
+  title:"JavaScript quiz",
   code:"https://github.com/SpencerFalor-Ward/HW-4-JavaScript-Quiz"
 },{
   url:"https://spencerfalor-ward.github.io/HW-3---passwordGenerator/",
   id:"project4",
   src: passwordImg,
   rel:"placeholder",
-  alt:"Password Generator",
-  title:"Password Generator",
+  alt:"Password generator",
+  title:"Password generator",
   code:"https://github.com/SpencerFalor-Ward/HW-3---passwordGenerator"
 },{
   url:"https://spencerfalor-ward.github.io/HW-5-SFW-Daily-Planner/",
