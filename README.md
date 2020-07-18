@@ -20,8 +20,9 @@ Run an npm install to install the dependencies
 
 ## Usage
 
-Use the links in the header to navigate bewteen pages.
+Use the links in the header to navigate bewteen pages. Get to know me on my About page. Checkout my projects in action or the code behind them on the Porfolio page. Send me an email or a message on the contact page. Hit the github or linkedin icons to see my respective pages 
 
+![Portfolio Demo](./client/src/assets/images/sfwPortfolioDemo.gif)
 
 ## Liscence
 
