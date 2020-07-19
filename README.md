@@ -8,7 +8,7 @@ A portfolio with an about me, contact page, project page and technical skills pa
 
 -   [Installation](#Installation)
 -   [Usage](#Usage)
--   [Liscence](#Liscence)
+-   [License](#License)
 -   [Contributing](#Contributing)
 -   [Test](#Test)
 -   [Questions](#Questions)
@@ -24,7 +24,7 @@ Use the links in the header to navigate bewteen pages. Get to know me on my Abou
 
 ![Portfolio Demo](./client/src/assets/images/sfwPortfolioDemo.gif)
 
-## Liscence
+## License
 
 Licensed under the [MIT License](https://choosealicense.com/licenses/mit/) license.
 
