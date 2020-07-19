@@ -1,6 +1,7 @@
 import emojiImg from "../assets/images/HW-groupProject1-resize.png"
 import quizImg from "../assets/images/HW-4-javaQuiz-resize.png"
 import passwordImg from "../assets/images/HW-3-passwordGenerator-resize.png"
+import employeeImg from "../assets/images/cartoonEmployeeDirectory-resizeimage.jpg"
 import workoutImg from "../assets/images/fitnessTracker-resize.png"
 import eatAhImg from "../assets/images/eatAhBurger-resize.jpg"
 import budgetImg from "../assets/images/budgetTracker-resize.png"
@@ -44,6 +45,15 @@ var arr = [
   alt:"Geocities password generator",
   title:"Geocities password generator",
   code:"https://github.com/SpencerFalor-Ward/Geocities-Password-Generator"
+},
+{
+  url:"https://spencerfalor-ward.github.io/Sfw-Employee-Directory/",
+  id:"project5",
+  src: employeeImg,
+  rel:"placeholder",
+  alt:"Cartoon employee directory",
+  title:"Cartoon employee directory",
+  code:"https://github.com/SpencerFalor-Ward/Sfw-Employee-Directory"
 },
 {
   url:"https://fitness-tracker-sfw.herokuapp.com/",
