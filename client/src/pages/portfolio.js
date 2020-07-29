@@ -23,7 +23,9 @@ return (
             rel={project.rel} 
             alt={project.alt} 
             title={project.title}
-            code={project.code} 
+            code={project.code}
+            description={project.description}
+            tech={project.tech} 
             />)}
         )}
         </div>

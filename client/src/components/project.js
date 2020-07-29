@@ -27,7 +27,11 @@ return (
           </i>
           </a>
           </div>
-  </div>
+          <div className="projectInfo">
+            <li>{props.description}</li>
+            <ul><u>Tech stack:</u> {props.tech}</ul>
+          </div>
+</div>
           </>
 
 )
